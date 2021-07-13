@@ -12,12 +12,6 @@ use Bfg\Installer\Providers\InstalledProvider;
 class ServiceProvider extends InstalledProvider
 {
     /**
-     * The name of extension.
-     * @var string|null
-     */
-    public ?string $name = "bfg/ide-helper";
-
-    /**
      * The description of extension.
      * @var string|null
      */
