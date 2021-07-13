@@ -1,0 +1,34 @@
+{
+    "name": "bfg/ide-helper",
+    "description": "IDE Helper with 'barryvdh'",
+    "type": "bfg-app",
+    "keywords": ["laravel", "extension", "ide-helper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bfg"
+        }
+    ],
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0.0",
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "bfg/installer": "*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Bfg\\IdeHelper\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bfg\\IdeHelper\\ServiceProvider"
+            ]
+        }
+    }
+}
