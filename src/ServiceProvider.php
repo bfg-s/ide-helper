@@ -6,16 +6,16 @@ use Bfg\Installer\Processor\DumpAutoloadProcessor;
 use Bfg\Installer\Providers\InstalledProvider;
 
 /**
- * Class ServiceProvider
+ * Class ServiceProvider.
  * @package Bfg\IdeHelper
  */
 class ServiceProvider extends InstalledProvider
 {
     /**
-     * The description of extension.
-     * @var string|null
+     * Set as installed by default.
+     * @var bool
      */
-    public ?string $description = "IDE Helper with 'barryvdh'";
+    public bool $installed = true;
 
     /**
      * Executed when the provider is registered
@@ -49,4 +49,3 @@ class ServiceProvider extends InstalledProvider
         $processor->command->call('ide-helper:meta');
     }
 }
-
